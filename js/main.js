@@ -20,6 +20,8 @@ import { SendMail } from "./components/mailer.js";
                 this.$refs["emessage"].innerHTML = result.message;
                 this.$refs["emessage"].style.display = 'block';
                 this.$refs["smessage"].style.display = 'none';
+                message.forEach(field => this.$refs[field].classList.add('error'));
+                console.log(result);
 
             },
 
@@ -29,7 +31,7 @@ import { SendMail } from "./components/mailer.js";
                 this.$refs["smessage"].innerHTML = result.message;
                 this.$refs["smessage"].style.display = 'block';  
                 this.$refs["emessage"].style.display = 'none';
-
+                console.log(result);
                 
             },
 
