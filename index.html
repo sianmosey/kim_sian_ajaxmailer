@@ -20,8 +20,8 @@
 
         <h2 class="mail-header">Processing Mail with AJAX</h2>
 
-        <div id="success" class="smessage" ref="smessage">yeh success!</div>
-        <div id="error" class="emessage" ref="emessage">sorry can you do it again?</div>
+        <div id="success" class="hidden" ref="smessage">yeh success!</div>
+        <div id="error" class="hidden" ref="emessage">sorry can you do it again?</div>
 
         <form action="./includes/send.php" method="POST" id="mail-form">
             <label for="firstname">First Name</label>
@@ -30,7 +30,7 @@
             <label for="lastname">Last Name</label>
             <input ref="lname" type="text" id="lastname" name="lastname" required>
 
-            <label for="firstname">Email</label>
+            <label for="email">Email</label>
             <input ref="email" type="email" id="email" name="email" required>
 
             <label for="message">Your Message</label>
